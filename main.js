@@ -1,4 +1,5 @@
 var Discord = require('discord.js');
+var Tokens = require('./tokens.js');
 
 var bot = new Discord.Client();
 
@@ -28,4 +29,4 @@ bot.on('disconnect', () => {
     bot.user.setStatus('offline');
 });
 
-bot.login(LOGIN_TOKEN);
+bot.login(Tokens.LOGIN_TOKEN);
